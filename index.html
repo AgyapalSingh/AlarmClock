@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+
+        <!-- It Shows the Current Time  -->
+        <div class="clock">
+            <span id="clockTime"></span>
+        </div>
+
+        <!-- It is used to set time of alarms -->
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <input type="time" id="alarmTime" class="form-control mb-2" step="1">
+                <button id="setAlarm" class="btn btn-primary">Set Alarm</button>
+            </div>
+        </div>
+
+        <!-- It is used to Display alarms -->
+        <div class="mt-4 upcoming-alarm">
+            <h6>Upcoming Alarms</h6>
+            <ul id="alarmsList" class="list-group">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
